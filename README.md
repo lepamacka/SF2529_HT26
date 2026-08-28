@@ -12,7 +12,7 @@ These instructions assume that you are on a Linux system with some experience in
 
 The preferred way to set up the Python environment is to use [uv](https://docs.astral.sh/uv). After downloading this repository and opening it in the terminal, run ``uv sync`` to automatically download the package requirements specified in pyproject.toml and build a virtual environment, which should then be accessible in a top-level folder called ``.venv``. You can then open the Jupyter notebooks in the labs folder in an appropriate editor, e.g., VS Code, and choose as kernel the virtual environment in ``.venv``. Alternatively, you can host the notebooks locally with the command ``uv run --with jupyter jupyter lab``, which should allow you to open them in your browser.
 
-If you prefer to build the environment yourself, the top-level package requirements are listed in pyproject.toml.
+If you prefer to build the environment yourself, the top-level package requirements are listed in pyproject.toml. Note that the instructions assume that version 1.0.0 of ODL is installed.
 
 # Labs
 

@@ -1178,7 +1178,7 @@ wheels = [
 
 [[package]]
 name = "odl"
-version = "1.0.0b1"
+version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "array-api-compat" },
@@ -1186,13 +1186,14 @@ dependencies = [
     { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
     { name = "numpy", version = "2.5.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "packaging" },
+    { name = "pytest" },
     { name = "scipy", version = "1.17.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
     { name = "scipy", version = "1.18.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "setuptools" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/82/eb/f3e83187d3f18b000f592f7ff4f4b5644c5e652fa13f55ae7d621595f3f4/odl-1.0.0b1.tar.gz", hash = "sha256:40cacb20b6692e2e1f05ab26b218d060c4f808f2658fd621f4a3394ba5a5e0f8", size = 666687 }
+sdist = { url = "https://files.pythonhosted.org/packages/ff/fb/818471611eea06e4f9c94f98aed288b7330a06e563364e70b2b54c87b4de/odl-1.0.0.tar.gz", hash = "sha256:d0f43a03a9c1d3329c58c5a56117cc0e3dd933b52de9e034068308b55e0cab9c", size = 1422803 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/32/57/0be050d00b3cbe1ca3ead48739e79f5d38330840fb9a9809678beba45e69/odl-1.0.0b1-py2.py3-none-any.whl", hash = "sha256:48547bcaeb329f7cb512cc44826fd561287975d5dd89bfd1015315cd830b36e0", size = 796102 },
+    { url = "https://files.pythonhosted.org/packages/a7/77/b6e9138a77b0f78139756f930cd50ecc7228e44b00c44d724bec4c2c053a/odl-1.0.0-py3-none-any.whl", hash = "sha256:b7ebf6725b3f200e5b4b86f60d219b78d0bfcb5c2ae6b621860f975441249f29", size = 824867 },
 ]
 
 [package.optional-dependencies]
@@ -1783,7 +1784,7 @@ requires-dist = [
     { name = "astra-toolbox", marker = "extra == 'gpu'", specifier = ">=2.4.0" },
     { name = "ipykernel", specifier = ">=6.30.1" },
     { name = "matplotlib", specifier = ">=3.10.3" },
-    { name = "odl", extras = ["testing"], specifier = "==1.0.0b1" },
+    { name = "odl", extras = ["testing"], specifier = "==1.0.0" },
     { name = "pyqt6", specifier = ">=6.9.0" },
     { name = "scipy", specifier = ">=1.15.3" },
 ]

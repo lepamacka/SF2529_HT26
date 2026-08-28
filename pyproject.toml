@@ -13,13 +13,13 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-gpu = [
+astra = [
     "astra-toolbox>=2.4.0",
 ]
 
 [dependency-groups]
-gpu = [
-    "sf2529-ht26[gpu]",
+astra = [
+    "sf2529-ht26[astra]",
 ]
 
 [tool.uv]

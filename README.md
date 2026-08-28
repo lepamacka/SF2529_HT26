@@ -8,7 +8,7 @@ ODL is a Python library that enables the user to study and solve inverse problem
 
 # Setting up the environment
 
-These instructions assume that you are on a Linux system with some experience in the terminal. It may be possible to follow along on a Mac, or on Windows with WSL, but this is untested. If you want help, come to the scheduled lab sessions.
+These instructions assume that you are on a Linux system with some experience in the terminal. It may be possible to follow along on Windows, especially with WSL, but this is untested. Mac is not supported for labs 2-4. If you want help, come to the scheduled lab sessions.
 
 The preferred way to set up the Python environment is to use [uv](https://docs.astral.sh/uv). After downloading this repository and opening it in the terminal, run ``uv sync`` to automatically download the package requirements specified in pyproject.toml and build a virtual environment, which should then be accessible in a top-level folder called ``.venv``. You can then open the Jupyter notebooks in the labs folder in an appropriate editor, e.g., VS Code, and choose as kernel the virtual environment in ``.venv``. Alternatively, you can host the notebooks locally with the command ``uv run --with jupyter jupyter lab``, which should allow you to open them in your browser.
 

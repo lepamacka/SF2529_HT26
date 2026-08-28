@@ -16,10 +16,10 @@ If you prefer to build the environment yourself, the top-level package requireme
 
 # Labs
 
-The labs are in the ``labs`` folder, and should be possible to follow with the help of the linked ODL documentation. For lab 2 you must add an additional package by running ``uv sync --group gpu``. For labs 3 and 4 you need GPU acceleration, unless you restrict the problem to 2D-tomography.
+The labs are in the ``labs`` folder, and should be possible to follow with the help of the linked ODL documentation. For lab 2 you must add an additional package by running ``uv sync --group astra``. For labs 3 and 4 you need GPU acceleration, unless you restrict the problem to 2D-tomography.
 
 # GPU acceleration
 
-The first two labs can be completed without access to an Nvidia GPU. However, labs 3 and 4 involve 3D-tomography, which ODL only allows when GPU acceleration is available. In addition, to make use of GPU resources, the optional dependencies in pyproject.toml must be installed. If you use uv this simply involves running ``uv sync --group gpu``.
+The first two labs can be completed without access to an Nvidia GPU. However, labs 3 and 4 involve 3D-tomography, which ODL only allows when GPU acceleration is available. In addition, to make use of GPU resources, the optional dependencies in pyproject.toml must be installed. If you use uv this simply involves running ``uv sync --group astra``.
 
 The plan is to provide you with access to a server with a GPU. If you wish to run labs 3 and 4 on your own, you can either restrict the problem to 2D-tomography, or you can try to set up an environment on a computer with a CUDA-capable Nvidia GPU. In the latter case, you need to ensure that [ASTRA Toolbox](https://github.com/astra-toolbox/astra-toolbox) can make use of your GPU, either by following the instructions on their Github page, or by updating your Nvidia drivers and installing a recent version of [CUDA Toolkit](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/).
